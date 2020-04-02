@@ -48,7 +48,6 @@ public class CacheConfig extends CachingConfigurerSupport{
            RedisCacheWriter.nonLockingRedisCacheWriter(redisConnectionFactory), 
            this.getRedisCacheConfigurationWithTtl( 60), // 默认策略，未配置的 key 会使用这个
            this.getRedisCacheConfigurationMap() // 指定 key 策略
-
         );
     }
     private Map<String, RedisCacheConfiguration> getRedisCacheConfigurationMap() {
@@ -72,6 +71,5 @@ public class CacheConfig extends CachingConfigurerSupport{
                 RedisSerializationContext.SerializationPair.fromSerializer(jackson2JsonRedisSerializer)
         ).entryTtl(Duration.ofSeconds(seconds));
         return redisCacheConfiguration;
-
     }
 }

@@ -65,7 +65,7 @@ public class MySqlController {
 	/**
 	 * 原生sql
 	 */
-	@RequestMapping("/nativeQuery2")
+	@RequestMapping("/nativeQuery")
 	public Map<String,Object> nativeQuery(@RequestBody Map<String,Object> messageIn) {
 		log.info("进入nativeQuery");
 		Map<String,Object> mapReturn = new HashMap<String,Object>();

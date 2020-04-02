@@ -15,7 +15,6 @@ public class Student implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	
-	
 	@Id //主键
 	@GeneratedValue //主键自动生成 有AUTO、IDENTITY、SEQUENCE、Table四种方式
 	private Integer id;
@@ -26,8 +25,6 @@ public class Student implements Serializable{
 	private String sex;
 	
 	private Integer age;
-	
-	
 	
 	public Integer getId() {
 		return id;
